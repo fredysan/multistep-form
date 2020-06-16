@@ -163,9 +163,12 @@ abstract class MultistepFormBase extends FormBase {
       $this->store->get('first_name')[0],
       $this->store->get('last_name'),
     ]);
-    $email = $username . '@zemoga.com';
 
-    // Assign a default password.
+    $domain = $this->configFactory()
+      ->get('zuser.settings')->get('emails_domain');
+    $email = $username . '@' . $domain;
+
+    // Assign a random password.
     $random = new Random();
     $pass = $random->string();
     $user->setPassword($pass);

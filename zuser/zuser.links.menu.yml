@@ -1,3 +1,9 @@
 zuser.add_user:
   title: "Multistep Form Add User"
   route_name: zuser.step_one
+zuser.zuser_settings_form:
+  title: 'Multistep Form Settings'
+  route_name: zuser.zuser_settings_form
+  description: 'Multistep Form Settings.'
+  parent: system.admin_config_system
+  weight: 99
