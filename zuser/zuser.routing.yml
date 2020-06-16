@@ -1,0 +1,23 @@
+zuser.step_one:
+  path: "/zuser-form/step-1"
+  defaults:
+    _form: '\Drupal\zuser\Form\StepOneForm'
+    _title: "First Form"
+  requirements:
+    _permission: "access content"
+
+zuser.step_two:
+  path: "/zuser-form/step-2"
+  defaults:
+    _form: '\Drupal\zuser\Form\StepTwoForm'
+    _title: "Second form"
+  requirements:
+    _permission: "access content"
+
+zuser.step_three:
+  path: "/zuser-form/step-3"
+  defaults:
+    _form: '\Drupal\zuser\Form\StepThreeForm'
+    _title: "Summary"
+  requirements:
+    _permission: "access content"

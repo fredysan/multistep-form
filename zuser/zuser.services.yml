@@ -1,0 +1,10 @@
+services:
+  zuser.string_generator:
+    class: Drupal\zuser\Service\StringGenerator
+    arguments:
+      - "@transliteration"
+
+  zuser.list_manager:
+    class: Drupal\zuser\Service\ListManager
+    arguments:
+      - "@transliteration"

@@ -1,0 +1,5 @@
+name: "zuser"
+type: module
+description: "Zemoga Test"
+core: 8.x
+package: "Zemoga"
