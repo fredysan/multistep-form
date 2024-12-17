@@ -101,7 +101,8 @@ class StepOneForm extends MultistepFormBase {
 
     $img = '';
     if (!empty($gender)) {
-      $img_path = '/' . drupal_get_path('module', 'zuser') . '/assets/' . $gender . '.png';
+      $module_path = \Drupal::service('extension.list.module')->getPath('zuser');
+      $img_path = '/' . $module_path . '/assets/' . $gender . '.png';
       $img = '<img src="' . $img_path . '" />';
     }
 

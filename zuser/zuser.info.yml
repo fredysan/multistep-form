@@ -1,5 +1,6 @@
 name: "zuser"
 type: module
 description: "Zemoga Test"
-core: 8.x
+core: 10.x
+core_version_requirement: 10.x
 package: "Zemoga"
